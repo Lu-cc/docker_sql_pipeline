@@ -1,0 +1,5 @@
+venv
+ny_taxi_postgres_data
+output.csv
+output.parquet
+pipeline.py

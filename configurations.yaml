@@ -61,12 +61,15 @@ docker build -t taxi_ingest:v001 .
 
 Running the container:
 
+(check the composed network name and fill it )
+
+URL="https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet"
 docker run -it \
-  --network=luc-network \
+  --network=docker_sql_pipeline_default \
   taxi_ingest:v001 \
     --user=root \
     --password=root \
-    --host=localhost \
+    --host=pgdatabase \
     --port=5432 \
     --db=ny_taxi \
     --table_name=yellow_taxi_data \

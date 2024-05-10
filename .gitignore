@@ -3,3 +3,6 @@ ny_taxi_postgres_data
 output.csv
 output.parquet
 pipeline.py
+.ipynb_checkpoints
+yellow_tripdata_2024_01.csv
+yellow_tripdata_2024_01.parquet
